@@ -35,7 +35,7 @@ function displayTemperature(responce) {
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(responce.data.dt * 1000);
   let iconElement = document.querySelector("#icon");
-  iconElement.getAttribute(
+  iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${responce.data.weather[0].icon}@2x.png`
   );
